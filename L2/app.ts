@@ -29,3 +29,5 @@ const product : {
 }={
     productId : [12,"mekbook"]
 }
+
+enum Role{ADMIN,AUTHOR,USER}
