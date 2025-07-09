@@ -57,3 +57,4 @@ const user : User={
     name:"Tv",
     age:22
 } //more readable
+
