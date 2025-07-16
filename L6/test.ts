@@ -65,6 +65,36 @@ getUserDetails({
     age:21
 });
 
+// extending interfaces
+interface Admin extends User{
+    admin:boolean;
+}
+// admin will have all attributes of User + the attributes of its own
+function fun(obj:Admin){
+    obj.admin
+}
 
+// two interfaces of same name is always merged together
 
+interface abcd{
+    name:string;
+}
+interface abcd{
+    email:string;
+}
+// both will be merged whenever abcd is used
 
+// type aliases
+type sankhya = number;
+// let tx : number | string |null;
+// instead we can alias the type as 
+type txValue = number|string|null;
+let tx :txValue;
+
+// intersection types -> 
+//  | -> union 
+// intersection 
+type Usertype = {
+    name : string,
+    email : string,
+}
