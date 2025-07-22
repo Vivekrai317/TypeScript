@@ -59,3 +59,20 @@ class User2{
 // if static keyword is used then we dont need to create a new instance and can be accessed directly ie bina instance bnaye
 
 let x = abcd;
+
+// abstract classes and methods
+//contains base data which are essentials 
+class CookingEssentials{
+    constructor(protected gas:number, public name : string){
+
+    }
+}
+
+function aa():void{
+
+}
+
+function ab(name:string,cb:(value:string)=>){
+
+}
+
